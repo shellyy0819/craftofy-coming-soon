@@ -530,6 +530,18 @@ h2 em {
 }
 @media (max-width: 900px) {.hero{padding-left:6%;padding-right:6%;gap:4%}.hero-art{height:auto}.hero-stall{height:auto;max-width:480px}}
 @media (max-width: 600px) {.topbar{height:67px;padding:0 5%}.hero{grid-template-columns:1fr;padding:48px 7% 55px;gap:34px}.hero h1{font-size:58px}.hero-art{margin:0 4%}.hero-proof{margin-top:30px}}
+
+html,body{overflow-x:hidden}
+.hero>*{min-width:0}
+@media (max-width: 600px){
+  .hero{grid-template-columns:minmax(0,1fr);min-height:0;padding:40px 6% 48px;gap:28px}
+  .hero h1{font-size:clamp(40px,13vw,58px);letter-spacing:-1.8px}
+  .hero-copy>p,.coming-soon-note{max-width:none}
+  .hero-art{margin:0;height:auto}
+  .hero-stall{height:auto;max-width:420px;margin:0 auto}
+  .hero-actions .button{width:100%}
+  .hero-proof{gap:10px 14px}
+}
 </style>
 </head>
 <body>
